@@ -1,0 +1,33 @@
+CODING
+{
+  "$schema": ""https://mspnp/template-building-blocks/master/schemas/buildingBlocks.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "buildingBlocks": {
+      "value": [
+        {
+          "type": "VirtualNetwork",
+          "settings": [
+            {
+              "name": "Vnet 1",
+              "addressPrefixes": [
+                "172.16.0.0/16"
+              ],
+              "subnets": [
+                {
+
+                  "name": "GatewaySubnet",
+                  "addressPrefix": "172.16.0.0/24"
+                },
+                {
+                  "name": "Subnet-001",
+                  "addressPrefix": "172.16.1.0/24"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
